@@ -1,6 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("@nomiclabs/hardhat-ether");
+require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
+require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -15,3 +16,5 @@ module.exports = {
     apiKey: process.env.POLYGONSCAN_API_KEY
   }
 };
+
+
